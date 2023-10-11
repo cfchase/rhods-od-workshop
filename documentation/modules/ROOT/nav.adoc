@@ -1,17 +1,24 @@
-* 1. xref:index.adoc[Workshop Summary]
-* 1. JuypterHub
-** xref:1-01-start-jupyter.adoc[1. Starting a Jupyter environment]
-** xref:1-02-jupyter-env.adoc[2. The Jupyter environment]
-** xref:1-03-notebooks.adoc[3. Notebooks]
-** xref:1-04-object-detection.adoc[4. Object Detection]
-** xref:1-05-model-api.adoc[5. Serving a Model]
-* 2. Deploying to OpenShift
-** xref:2-01-deploy-s2i.adoc[1. Deploy with Source to Image]
-** xref:2-02-testing-deployment.adoc[2. Testing the Deployment]
-** xref:2-03-calling-from-application.adoc[3. Calling from an Application]
-* 3. Working with Kafka
-** xref:3-01-create-kafka.adoc[1. Create a Kafka Instance]
-** xref:3-02-explore-kafka.adoc[2. Explore Kafka in a Notebook]
-** xref:3-03-create-secret.adoc[3. Create a Secret to Connect]
-** xref:3-04-kakfa-consumer.adoc[4. Deploy a Kafka Consumer]
-* 1. xref:resources.adoc[Resources]
+* 1. Projects
+** xref:1-01-dashboard.adoc[1. The Dashboard]
+** xref:1-02-project-setup.adoc[2. Data Science Projects]
+** xref:1-03-data-connections.adoc[3. Storage Data Connections]
+*** xref:1-03-01-data-connections-manual.adoc[1. Manual]
+*** xref:1-03-02-data-connections-script.adoc[2. Scripted Local]
+** xref:1-04-enable-pipelines.adoc[4. Enable Pipelines]
+
+* 2. Workbenches
+** xref:2-01-create-workbench.adoc[1. Create a Workbench]
+** xref:2-02-jupyter-env.adoc[2. The Jupyter Environment]
+** xref:2-03-notebooks.adoc[3. Using Notebooks]
+** xref:2-04-object-detection.adoc[4. Object Detection]
+
+* 3. Model Serving
+** xref:3-01-model-api.adoc[1. Serving a Model]
+** xref:3-02-deploy-s2i.adoc[2. Deploy with Source to Image]
+** xref:3-03-testing-deployment.adoc[3. Testing the Deployment]
+** xref:3-04-calling-from-application.adoc[4. Calling from an Application]
+
+* 4. Data Science Pipelines
+** xref:4-01-running-the-model-offline.adoc[1. Running the Model Offline]
+** xref:4-02-offline-scoring-pipelines.adoc[2. Offline Scoring Pipelines]
+** xref:4-03-training-the-model.adoc[3. Training a Model]

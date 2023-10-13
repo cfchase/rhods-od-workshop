@@ -12,14 +12,14 @@ image::projects/dashboard-enabled.png[Dashboard Enabled]
 
 You could start a Jupyter notebook from here, but it would be a one-off notebook run in isolation.  To do data science as part of a workflow, we need to create a data science project. Projects allow you and your team to organize and collaborate on resources within separated namespaces.  From a project you can create multiple workbenches, each with their own Jupyter notebook environment, and each with their own data connections and cluster storage.  In addition, they can share models and data with pipelines and model servers.
 
-* Navigate to `Data Science Projects` in the left menu. Here you can see the list of existing projects that you have access to.
+* Navigate to *Data Science Projects* in the left menu. Here you can see the list of existing projects that you have access to.
 
 image::projects/dashboard-click-projects.png[Data Science Projects List]
 
 From here, you can select an existing project, or create a new one.  If you already have an active project you'd like to use, select it now and skip ahead to the xref:1-03-data-connections.adoc[next section].  Otherwise, let's create a new project.
 
 
-* Click `Create data science project`.
+* Click *Create data science project*.
 
 image::projects/create-project-button.png[Create proejct button]
 

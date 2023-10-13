@@ -18,7 +18,7 @@ If you are prompted to log in using OpenShift, please go ahead and do so.  RHODS
  
 image::projects/login-with-openshift.png[OpenShift Login, 300]
 
-At the OpenShift Data Science Dashboard, you can see the status of any installed and enabled applications as well as `Explore` other available application integrations.
+At the OpenShift Data Science Dashboard, you can see the status of any installed and enabled applications as well as *Explore* other available application integrations.
 
 image::projects/dashboard-enabled.png[Dashboard Enabled]
 

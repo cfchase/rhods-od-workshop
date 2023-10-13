@@ -1,4 +1,4 @@
-= 1.4 Object Detection
+= 2.4 Object Detection
 
 include::_attributes.adoc[]
 
@@ -6,7 +6,10 @@ Now that you know how the environment works, the real work can begin!
 
 Still in you environment, just open the file `1_explore.ipynb`, and follow the instructions directly in the notebook!
 
-image::notebooks/1_explore.png[alt text]
+image::workbenches/jupyter-notebook-1.png[Jupyter Notebook 1]
 
+At the end of the notebook, it will look like this:
 
-Once you're finished, you can come back here and xref:2-01-model-api.adoc[head to the next chapter.]
+image::workbenches/jupyter-notebook-1-complete.png[Jupyter Notebook 1 Complete]
+
+Once you're finished, you can come back here and xref:3-01-save-model.adoc[head to the next chapter.]

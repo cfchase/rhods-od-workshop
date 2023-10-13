@@ -10,7 +10,7 @@ NOTE: If you do not intend to complete the pipelines section of the workshop you
 
 == Create a Pipeline Server
 
-* Click `Create pipeline server`
+* Click *Create pipeline server*
 
 image::projects/ds-project-create-pipeline-server.png[Create pipeline server button]
 
@@ -20,9 +20,9 @@ image::projects/ds-project-create-pipeline-server-form.png[Selecting the Pipelin
 
 * Leave the database configuration as the default.
 
-* Click `Configure`.
+* Click *Configure*.
 
-Pipelines should now be enabled for your project and the `Create pipeline server` button should disappear.
+Pipelines should now be enabled for your project and the *Create pipeline server* button should disappear.
 
 image::projects/ds-project-create-pipeline-server-complete.png[Create pipeline server complete]
 

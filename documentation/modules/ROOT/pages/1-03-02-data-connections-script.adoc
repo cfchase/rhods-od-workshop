@@ -20,7 +20,7 @@ image::projects/ds-project-list-resource-hover.png[Project List Resource Name]
 
 == Navigate to the OpenShift Project
 
-NOTE: This section details how to start an OpenShift job to install the s3 compatible storage and associated data connection secrets.  If you are knowledgeable in OpenShift and can access the cluster from the command line, you can simply execute `oc apply -n <your-project-name/> -f https://github.com/cfchase/rhods-od-setup/blob/main/generated/setup-s3-job.yaml`.
+NOTE: This section details how to start an OpenShift job to install the s3 compatible storage and associated data connection secrets.  If you are knowledgeable in OpenShift and can access the cluster from the command line, you can simply execute `oc apply -n <your-project-name/> -f https://raw.githubusercontent.com/cfchase/object-detection/main/setup/setup-s3-job.yaml`.
 
 Now that we have the resource name, we can navigate to the project in the OpenShift Console.  Click on the *OpenShift Console* link in the application switcher top right corner of the OpenShift Web Console.
 
@@ -38,7 +38,9 @@ image::projects/ocp-console-select-project.png[Select Project]
 
 image::projects/ocp-console-project-selected.png[Project Selected]
 
-[source, yaml, copy-to-clipboard]
+[.lines_space]
+[.console-input]
+[source, yaml]
 ----
 ---
 apiVersion: v1
@@ -71,7 +73,7 @@ spec:
             - -ec
             - |-
               echo -n 'Setting up Minio instance and data connections'
-              oc apply -f https://raw.githubusercontent.com/cfchase/rhods-od-setup/main/generated/setup-s3-no-sa.yaml
+              oc apply -f https://raw.githubusercontent.com/cfchase/object-detection/main/setup/setup-s3-no-sa.yaml
           command:
             - /bin/bash
           image: image-registry.openshift-image-registry.svc:5000/openshift/tools:latest
@@ -85,11 +87,12 @@ spec:
 
 == Data Connections
 
-We will be using S3 compatible object storage, such as Ceph, Minio, or AWS S3, to store the data and models used in this workshop. To access the data and models, we will use a Data Connection, which is a resource that contains the configuration parameters required to connect to an object storage bucket.
+* Return to the RHODS console and review the new data connections
 
-We will need 2 buckets.  
+Now you should see your data connections listed in the project.
 
-1. *My Storage* - Personal use for models and data.  We can reuse that bucket and connection for notebooks and model servers.  
-2. *Pipelines Artifacts* - This is used as storage for your pipeline artifacts and required when creating a pipeline server.  We'll keep it separate from the first bucket for clarity.
+image::projects/ds-project-dc-list.png[]
 
-You can choose to use your own object storage and learn how to configure it manually 
+If you want to edit them or view the information, delect *Edit data connection* from the actions button.
+
+image::projects/ds-project-my-storage-form.png[Add My Storage Form]

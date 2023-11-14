@@ -20,13 +20,13 @@ It's pretty empty right now though... So the first thing we will do is to bring 
 
 image::workbenches/jupyter-git-icon.png[Git Icon]
 
-* Enter the git *https* URL, `https://github.com/cfchase/rhods-od-notebooks.git`, then click *CLONE*:
+* Enter the git *https* URL, `https://github.com/cfchase/object-detection.git`, then click *CLONE*:
 
 [.lines_space]
 [.console-input]
 [source,text]
 ----
-https://github.com/cfchase/rhods-od-notebooks.git
+https://github.com/cfchase/object-detection.git`
 ----
 
 image::workbenches/jupyter-git-modal.png[Git Modal]
